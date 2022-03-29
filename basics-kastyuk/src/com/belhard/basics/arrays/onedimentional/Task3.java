@@ -25,7 +25,7 @@ public class Task3 {
 		int minElement = Integer.MAX_VALUE;
 		int countMinElem = 0;
 		for (int i : nums) {
-			minElement = Math.min(minElement, i);
+			minElement = min(minElement, i);
 		}
 		
 		int[] newNums = new int[N - countMinElem];
@@ -40,4 +40,8 @@ public class Task3 {
 			}
 		}
 	}
+	
+	public static int min(int a, int b) {
+        return (a <= b) ? a : b;
+    }
 }
